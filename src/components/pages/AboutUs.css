@@ -1,0 +1,63 @@
+.aboutus-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Adjust for navbar height */
+  padding-bottom: 80px; /* Ensure footer is fully visible */
+}
+
+.aboutus-bg-video {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6);
+  pointer-events: none;
+}
+
+.aboutus-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+  text-shadow: 0 2px 8px #000;
+}
+
+.aboutus-text {
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .aboutus-content {
+    padding: 24px 8px;
+  }
+  .aboutus-title {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-container, .social-media {
+    position:relative;
+    z-index:2;
+}
