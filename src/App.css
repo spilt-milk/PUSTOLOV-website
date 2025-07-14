@@ -129,3 +129,72 @@
 .signup-btn:hover {
   background: #e2e2e2;
 }
+
+
+/*Login sekcija*/
+
+.login-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* Remove background here */
+}
+
+.login-title {
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.login-form {
+    background: #222;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form input {
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    background: #444;
+    color: #fff;
+}
+
+.login-form input:focus {
+    outline: 2px solid #fff;
+}
+
+.login-btn {
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #eee;
+}

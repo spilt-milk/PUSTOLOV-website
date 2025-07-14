@@ -44,6 +44,16 @@
   justify-content: end;
   margin-right: 2rem;
 }
+.nav-item .btn,
+.nav-item .btn--outline,
+.nav-item .btn--primary {
+    width: auto !important;
+    min-width: 120px;
+    max-width: 180px;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .nav-item {
   height: 80px;
@@ -74,6 +84,7 @@
 .menu-icon {
   display: none;
 }
+
 
 @media screen and (max-width: 960px) {
   .NavbarItems {

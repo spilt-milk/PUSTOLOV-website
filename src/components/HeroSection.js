@@ -15,23 +15,22 @@ function HeroSection() {
             <p>Što čekaš?</p>
             <div className="hero-btns">
                 <Link to="/services">
-                    <button className="btn" buttonStyle='btn--outline' buttonSize='btn--large'>
+                    <Button buttonStyle='btn--outline' buttonSize='btn--large'>
                         Počni sada
-                    </button>
+                    </Button>
                 </Link>
-                <button
-                    className="btn"
+                <Button
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                     onClick={() => setShowTrailer(true)}
                 >
                     Najava <i className='far fa-play-circle' />
-                </button>
+                </Button>
             </div>
             {showTrailer && (
                 <div className="youtube-modal">
                     <div className="youtube-modal-content">
-                        <button className="close-btn" onClick={() => setShowTrailer(false)}>Zatvori</button>
+                        <Button className="close-btn" onClick={() => setShowTrailer(false)}>Zatvori</Button>
                         <iframe
                             width="100%"
                             height="400"

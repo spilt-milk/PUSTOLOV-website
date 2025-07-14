@@ -9,9 +9,9 @@ export default function SignUp() {
         message: ''
     });
 
-    const handleChange = e => {
+    function handleChange(e) {
         setForm({ ...form, [e.target.name]: e.target.value });
-    };
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -22,7 +22,7 @@ export default function SignUp() {
 
     return (
         <div className="signup-section">
-            <h1 className="signup-title">Prijavite se</h1>
+            <h1 className="signup-title">Pretplati se</h1>
             <form className="signup-form" onSubmit={handleSubmit}>
                 <input
                     type="text"

@@ -17,7 +17,7 @@ export default function AboutUs() {
         </p>
       </div>
       <div style={{ height: '40px' }}></div>
-      <Footer />
+     <Footer />
     </div>
   );
 }
