@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 // src/service-worker.js
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute, NavigationRoute } from 'workbox-routing';
