@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
 import './HeroSection.css';
 import video1 from '../videos/video-1.mp4';    
 
@@ -15,22 +14,23 @@ function HeroSection() {
             <p>Što čekaš?</p>
             <div className="hero-btns">
                 <Link to="/services">
-                    <Button buttonStyle='btn--outline' buttonSize='btn--large'>
+                    <button className="btn" buttonStyle='btn--outline' buttonSize='btn--large'>
                         Počni sada
-                    </Button>
+                    </button>
                 </Link>
-                <Button
+                <button
+                    className="btn"
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                     onClick={() => setShowTrailer(true)}
                 >
                     Najava <i className='far fa-play-circle' />
-                </Button>
+                </button>
             </div>
             {showTrailer && (
                 <div className="youtube-modal">
                     <div className="youtube-modal-content">
-                        <Button className="close-btn" onClick={() => setShowTrailer(false)}>Zatvori</Button>
+                        <button className="close-btn" onClick={() => setShowTrailer(false)}>Zatvori</button>
                         <iframe
                             width="100%"
                             height="400"

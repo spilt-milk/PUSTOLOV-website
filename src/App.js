@@ -16,7 +16,7 @@ import Contact from './components/pages/Contact';
 function App() {
   return (
     <>
-      <Router basename={process.env.NODE_ENV === 'production' ? '/pustolov' : undefined}>
+      <Router basename="/dnelc/pustolov">
         <ScrollToTop />
         <Navbar />
         <Routes>
