@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
 import './HeroSection.css';
 import video1 from '../videos/video-1.mp4';    
 
