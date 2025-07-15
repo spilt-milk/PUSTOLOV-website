@@ -14,7 +14,7 @@ import Contact from './components/pages/Contact';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/dnelc/pustolov">
         <ScrollToTop />
         <Navbar />
         <Routes>
